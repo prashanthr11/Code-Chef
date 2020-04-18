@@ -1,7 +1,7 @@
-#include<iostream>
-#include<bits/stdc++.h>
+# include <iostream>
+# include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main() {
     int t;
     cin >> t;
     while(t--) {
@@ -9,13 +9,13 @@ int main(){
         int n;
         // n = rand();
         cin >> n;
-        int a[n],b[n];
-        map<int,int> mp;
-        // map<int,int> smp;
-        for(int i=0;i<n;i++){
+        int a[n], b[n];
+        map<int, int> mp;
+        // map<int, int> smp;
+        for(int i = 0;i < n; i++){
             cin >> a[i] >> b[i];
         }
-        for(int i=0;i<n;i++){
+        for(int i = 0; i < n; i++){
             if(mp[a[i]]){
                 mp[a[i]] = mp[a[i]] > b[i] ? mp[a[i]] : b[i];
             }
@@ -36,11 +36,11 @@ int main(){
         // }
         for(auto i:mp){
             if(i.first < 9)
-            maximum+= i.second;
+            maximum += i.second;
         }
         cout << maximum << endl;
         // for(int i=0;i<n;i++){
-        //     cout << a[i] << ' ' << b[i] <<endl;
+        //     cout << a[i] << ' ' << b[i] << endl;
     // }
     }
 }
